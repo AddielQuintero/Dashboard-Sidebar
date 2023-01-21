@@ -1,0 +1,42 @@
+/* Media Queries Mixin
+**********************/
+
+@mixin media($breakpoint) {
+  @if $breakpoint == md {
+    @media only screen and (max-width: 991.98px) {
+      @content;
+    }
+  } @else if $breakpoint == lg {
+    @media only screen and (min-width: 992px) {
+      @content;
+    }
+  } @else if $breakpoint == xl {
+    @media only screen and (min-width: 1200px) {
+      @content;
+    }
+  } @else if $breakpoint == xxl {
+    @media only screen and (min-width: 1480px) {
+      @content;
+    }
+  } @else if $breakpoint == sm-only {
+    @media only screen and (max-width: 768px) {
+      @content;
+    }
+  } @else if $breakpoint == md-only {
+    @media only screen and (min-width: 768px) and (max-width: 992px) and (orientation: landscape) {
+      @content;
+    }
+  } @else if $breakpoint == md-xl-only {
+    @media only screen and (min-width: 768px) and (max-width: 1200px) {
+      @content;
+    }
+  } @else if $breakpoint == lg-xl-only {
+    @media only screen and (min-width: 992px) and (max-width: 1200px) {
+      @content;
+    }
+  } @else if $breakpoint == xl-xxl-only {
+    @media only screen and (min-width: 1200px) and (max-width: 1480px) {
+      @content;
+    }
+  }
+}
