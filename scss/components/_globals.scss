@@ -1,0 +1,95 @@
+/* ------------------- Font ------------------- */
+
+/* Font weight */
+$font-weight-normal: 400 !default;
+$font-weight-medium: 500 !default;
+$font-weight-semi-bold: 600 !default;
+$font-weight-bold: 700 !default;
+
+/* Font size */
+$font-size-xxs: 0.563rem; /* 9px */
+$font-size-xs: 0.625rem; /* 10px */
+$font-size-sm: 0.75rem; /* 12px */
+$font-size-md: 0.875rem; /* 14px */
+$font-size-base: 1rem; /* 16px */
+$font-size-lg: 1.125rem; /* 18px */
+$font-size-2xl: 1.25rem; /* 20px */
+$font-size-3xl: 1.563rem; /* 25px */
+$font-size-4xl: 1.875rem; /* 30px */
+$font-size-5xl: 2.5rem; /* 40px */
+$font-size-6xl: 3.25rem; /* 52px */
+$font-size-7xl: 3.75rem; /* 60px */
+$font-size-8xl: 4.5rem; /* 72px */
+$font-size-9xl: 5.313rem; /* 85px */
+
+/* Headings */
+$h1-font-size: 4.5rem; /* 72px */
+$h2-font-size: 3.125rem; /* 50px */
+$h3-font-size: 2.313rem; /* 37px */
+$h4-font-size: 1.5rem; /* 24px */
+$h5-font-size: 1.25rem; /* 20px */
+$h6-font-size: 1.125rem; /* 18px */
+
+$h1-font-size-mobile: 3.125rem; /* 50px */
+$h2-font-size-mobile: 2.375rem; /* 38px */
+$h3-font-size-mobile: 1.475rem; /* 30px */
+$h4-font-size-mobile: 1.5rem; /* 24px */
+$h5-font-size-mobile: 1.188rem; /* 19px */
+$h6-font-size-mobile: 1.188rem; /* 19px */
+
+/* ------------------- box-sizing ------------------- */
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Oswald", sans-serif;
+}
+
+/* ------------------- Colors ------------------- */
+
+:root {
+  --primary: #51557e;
+  --bg-color: #191919;
+  --sidebar-color: #2a2a2a;
+  --search-color: #191919;
+  --toggle-color: #2a2a2a;
+  --text-search-color: #fff;
+  --text-color: #fff;
+
+  body.light {
+    --primary: #a5becc;
+    --bg-color: #e4e9f7;
+    --sidebar-color: #fff;
+    --toggle-color: #70707c;
+    --search-color: #dfdfde;
+    --text-search-color: #ddd;
+    --text-color: #2a2a2a;
+  }
+
+  /* ------------------- Transition ------------------- */
+  --tran-01: 0.1s;
+  --tran-03: all 0.3s ease;
+  --tran-04: all 0.4s ease;
+  --tran-05: all 0.5s ease;
+}
+
+/* ------------------- body ------------------- */
+
+body {
+  font-family: "Oswald", sans-serif;
+  background-color: var(--bg-color);
+  font-size: $font-size-base;
+  line-height: 1.6875rem;
+  font-weight: $font-weight-medium;
+  margin: 0;
+  text-rendering: optimizeLegibility;
+  font-variant-ligatures: common-ligatures;
+  -webkit-overflow-scrolling: touch;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  transition: var(--tran-05);
+}
+
+/* ------------------- Mixins ------------------- */
+

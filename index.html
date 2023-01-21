@@ -5,8 +5,55 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Responsive SideBar</title>
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Lato:400,400i,700,700i|Oswald:400,500,600,700&amp;display=swap"
+    />
     <link rel="stylesheet" href="css/styles.css" />
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
     <script defer src="js/script.js"></script>
   </head>
-  <body></body>
+  <body>
+    <div class="sidebar">
+      <div class="toggle">
+        <i class="bx bx-chevron-right"></i>
+      </div>
+      <div class="sidebar__logo">
+        <div class="logo">
+          <img src="images/logo.jpg" alt="" />
+        </div>
+        <span class="user">John Doe</span>
+      </div>
+      <nav class="sidebar__nav">
+        <div class="search">
+          <i class="bx bx-search"></i>
+          <input type="text" placeholder="Search..." />
+        </div>
+
+        <ul class="sidebar__management">
+          <li><i class="bx bxs-dashboard"></i><span>Dashboard</span></li>
+          <li><i class="bx bxs-user"></i><span>User</span></li>
+          <li><i class="bx bx-line-chart"></i><span>Chart</span></li>
+          <li><i class="bx bxs-bar-chart-alt-2"></i><span>Analytics</span></li>
+          <li><i class="bx bxs-cog"></i><span>Settings</span></li>
+        </ul>
+        <hr />
+        <div class="support">Support</div>
+        <ul class="sidebar__support">
+          <li><i class="bx bx-folder"></i><span>File Manager</span></li>
+          <li><i class="bx bx-help-circle"></i><span>Help</span></li>
+          <li class="change__mode">
+            <span class="modeText">Light mode</span>
+            <label class="switch">
+              <input type="checkbox" />
+              <div class="slider"></div>
+            </label>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </body>
 </html>
