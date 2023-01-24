@@ -188,6 +188,7 @@ h6, .h6 {
   color: var(--text-color);
   -webkit-transition: 0.4s ease-in-out;
   transition: 0.4s ease-in-out;
+  z-index: 1;
 }
 .sidebar.open {
   width: 16.25rem;
@@ -273,6 +274,17 @@ h6, .h6 {
 .sidebar__nav {
   padding: 1rem;
   overflow-y: scroll;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  height: calc(100% - 125px);
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   /*********switch mode*********/
 }
 .sidebar__nav::-webkit-scrollbar {
@@ -385,4 +397,25 @@ h6, .h6 {
   background: linear-gradient(40deg, var(--toggle-color), var(--toggle-color) 70%);
   -webkit-transition: var(--tran-04);
   transition: var(--tran-04);
+}
+
+.container {
+  position: absolute;
+  height: 100vh;
+  width: calc(100% - 5.5rem);
+  left: 5.5rem;
+  -webkit-transition: 0.4s ease-in-out;
+  transition: 0.4s ease-in-out;
+  padding: 2rem;
+}
+.container .welcome {
+  width: 100%;
+  padding: 1rem;
+  background-color: var(--sidebar-color);
+  color: var(--text-color);
+}
+
+.sidebar.open ~ .container {
+  left: 16.25rem;
+  width: calc(100% - 16.25rem);
 }

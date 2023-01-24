@@ -8,6 +8,7 @@
   opacity: 0.8;
   color: var(--text-color);
   transition: 0.4s ease-in-out;
+  z-index: 1;
 
   &.open {
     width: 16.25rem;
@@ -95,6 +96,10 @@
   &__nav {
     padding: 1rem;
     overflow-y: scroll;
+    display: flex;
+    flex-direction: column;
+    height: calc(100% - 125px);
+    justify-content: space-between;
 
     &::-webkit-scrollbar {
       display: none;
@@ -205,3 +210,4 @@
     }
   }
 }
+
