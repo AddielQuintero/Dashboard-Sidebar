@@ -1,0 +1,21 @@
+.container {
+  //   background-color: red;
+  position: absolute;
+  height: 100vh;
+  width: calc(100% - 5.5rem);
+  left: 5.5rem;
+  transition: 0.4s ease-in-out;
+  padding: 2rem;
+
+  .welcome {
+    width: 100%;
+    padding: 1rem;
+    background-color: var(--sidebar-color);
+    color: var(--text-color);
+  }
+}
+
+.sidebar.open ~ .container {
+  left: 16.25rem;
+  width: calc(100% - 16.25rem);
+}
