@@ -413,6 +413,7 @@ h6, .h6 {
   padding: 1rem;
   background-color: var(--sidebar-color);
   color: var(--text-color);
+  overflow: hidden;
 }
 
 .sidebar.open ~ .container {
